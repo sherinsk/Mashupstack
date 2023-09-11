@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REGISTRATION FORM</title>
+</head>
+<h3>REGISTRATION FORM</h3>
+<body>
+<form action="" method="POST">
+  <label for="name">Name : </label>
+  <input type="text" id="name" name="name" placeholder="Enter your name " required><br><br>
+  <label for="email">Email : </label>
+  <input type="email" id="email" name="email" value="test@example.com" required><br><br>
+  <label for="pwd">Password : </label>
+  <input type="password" id="pwd" name="password" required minlength="8"><br><br>
+  <label for="category">Category : </label>
+  <select id="category" name="category" required>
+    <option value="student">Student</option>
+    <option value="employee">Employee</option>
+    <option value="freelancer" selected>Freelancer</option>
+  </select>
+  <label for="eventdate">Event Date</label>
+  <input type="date" id="eventdate" required ><br><br>
+  <label for="tickets">Tickets :</label>
+  <input type="radio" id="1Ticket" name="Ticket" required>
+  <label for="1Ticket">1 Ticket </label>
+  <input type="radio" id="2Ticket" checked name="Ticket" required>
+  <label for="2Tickets">2 Tickets</label>
+  <input type="radio" id="3Tickets" name="Ticket"
+  <label for="3Tickets">3 Tickets</label><br><br>
+  <label for="onlinepayment">Online Payment</label>
+  <input type="checkbox" id="onlinepayment" name=onlinepayment required><br><br>
+  <label for="notes">Additional Notes</label>
+  <textarea id="notes" placeholder="Enter any additional notes"></textarea><br><br>
+  <input type="submit" value="submit">
+</form>
+<script>
+document.getElementById("email").focus();
+</script>
+</body>
+
+</html>
